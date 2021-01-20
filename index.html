@@ -347,6 +347,12 @@
                 <!-- Sezione 7 -->
                 <section id="section_7">
 
+                    <div>
+                        <h3>Start Your Free Consultation</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem <br> accusantium doloremque laudantium.</p>
+                        <button>contact us now</button>
+                    </div>
+
                 </section>
                 <!-- //Sezione 7 -->
 
@@ -356,7 +362,13 @@
 
             <!-- Footer -->
             <footer>
-
+                <img :src="footer.logo" alt="">
+                <div>
+                    <ul>
+                        <li v-for="link in footer.link">{{link}}</li>
+                    </ul>
+                </div>
+                <i v-for="i in footer.icone" :class="i"></i>
             </footer>
             <!-- //Footer -->
 

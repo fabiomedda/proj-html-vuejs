@@ -28,6 +28,24 @@ let app = new Vue ({
             p2: "Phasellus eu ornare erat. Curabitur pulvinar elit.",
             linkBuy: "Buy avada now",
             linkContact: "Contact us",
+        },
+        footer:{
+            logo: "assets/img/logo_seo_1x.png",
+            link: [
+                "Home",
+                "Who We Are",
+                "What We Do",
+                "Where We Work",
+                "Careers",
+                "News",
+                "Get in touch now",
+            ],
+            icone: [
+                "fab fa-facebook-f",
+                "fab fa-instagram",
+                "fab fa-twitter",
+                "fab fa-youtube",
+            ],
         }
     },
     methods:{
