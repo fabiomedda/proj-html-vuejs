@@ -10,9 +10,7 @@ let app = new Vue ({
     el: "#app",
     data:{
         navLeft: {
-            logo: "",
-            linkAvada: "",
-            linkSeo: "",
+            logo: "assets/img/logo_seo_w_1x.png",
         },
         navRight: {
             linkHome: "Home",
@@ -26,7 +24,8 @@ let app = new Vue ({
         },
         headerJumbotron: {
             h1: "SEM Campaigns Made Simple With Avada",
-            p: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Phasellus eu ornare erat. Curabitur pulvinar elit.",
+            p1: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            p2: "Phasellus eu ornare erat. Curabitur pulvinar elit.",
             linkBuy: "Buy avada now",
             linkContact: "Contact us",
         }

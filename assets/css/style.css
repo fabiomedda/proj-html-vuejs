@@ -5,6 +5,7 @@
 }
 
 body{
+    font-family: 'Roboto', sans-serif;
     background-color: rgb(92, 92, 92);
 }
 
@@ -15,6 +16,21 @@ body{
     margin: auto;
 }
 
+.list_style_none{
+    list-style: none;
+}
+
+.d_flex{
+    display: flex;
+}
+
+.align_items_center{
+    align-items: center;
+}
+
+.active{
+    color: #ffa837;
+}
 /* //class utility */
 
 /***********
@@ -28,7 +44,116 @@ header{
     background-position: center;
 }
 
+
+/* Navbar */
 nav{
     height: 100px;
-    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+nav > section:last-of-type > ul > li{
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+nav>section:last-of-type>ul>li>button.btn_apply {
+    font-size: 12px;
+    padding: 3px 7px;
+    color: #eca447;
+    border-color: #eca447;
+    background-color: rgb(255 255 255 / 0%);
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+nav>section:last-of-type>ul>li>button.btn_apply:hover{
+    color: #ff9100;
+    border-color: #ff9100;
+}
+
+nav>section:last-of-type>ul>li:last-of-type>button {
+    font-size: 12px;
+    padding: 13px 22px;
+    color: white;
+    font-weight: 700;
+    border-radius: 20px;
+    text-transform: uppercase;
+    background-color: #ffa837;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+nav>section:last-of-type>ul>li:last-of-type>button:hover{
+    background-color: #ff9001;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+/* //Navbar */
+
+
+/* Jumbotron */
+
+#jumbotron > div{
+    width: 50%;
+    padding-top: 175px;
+    color: white;
+}
+
+#jumbotron>div>h1{
+    font-size: 55px;
+    padding-bottom: 20px;
+}
+
+#jumbotron>div>p{
+    font-size: 19px;
+    line-height: 30px;
+}
+
+#jumbotron>div>button{
+    margin-top: 25px;
+    margin-right: 15px;
+    font-size: 13px;
+    padding: 15px 45px;
+    color: white;
+    font-weight: 700;
+    border-radius: 45px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#jumbotron>div>button:first-of-type{
+    background-color: #ffa837;
+}
+
+#jumbotron>div>button:first-of-type:hover{
+    background-color: #ff9001;
+}
+
+#jumbotron>div>button:last-of-type {
+    background-color: #0369d7;
+}
+
+
+#jumbotron>div>button:last-of-type:hover{
+    background-color: #1888ff;
+}
+/* //Jumbotron */
+
+
+/***********
+///HEADER///
+***********/

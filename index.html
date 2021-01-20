@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
         <!-- development version, includes helpful console warnings -->
         <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -18,10 +20,45 @@
 
             <!-- Header -->
             <header>
-
+                
+                <!-- Navbar -->
                 <nav class="container">
 
+                    <section>
+                        <a href="#">
+                            <img :src="navLeft.logo" alt="">
+                        </a>
+                    </section>
+
+                    <section>
+                        <ul class="list_style_none d_flex align_items_center">
+                            <li><a href="#" class="active">{{navRight.linkHome}}</a></li>
+                            <li><a href="#">{{navRight.linkWho}}</a></li>
+                            <li><a href="#">{{navRight.linkWhat}}</a></li>
+                            <li><a href="#">{{navRight.linkWhere}}</a></li>
+                            <li><a href="#">{{navRight.linkCareers}}</a> <button class="btn_apply">{{navRight.linkApply}}</button></li>
+                            <li><a href="#">{{navRight.linkNews}}</a></li>
+                            <li><button>{{navRight.linkGet}}</button></li>
+                        </ul>
+                    </section>
+
                 </nav>
+                <!-- //Navbar -->
+
+
+                <!-- Sezione Jumbotron -->
+                <section id="jumbotron" class="container">
+
+                    <div>
+                        <h1>{{headerJumbotron.h1}}</h1>
+                        <p>{{headerJumbotron.p1}}</p>
+                        <p>{{headerJumbotron.p2}}</p>
+                        <button>{{headerJumbotron.linkBuy}}</button>
+                        <button>{{headerJumbotron.linkContact}}</button>
+                    </div>
+
+                </section>
+                <!-- //Sezione Jumbotron -->
 
             </header>
             <!-- //Header -->
