@@ -40,6 +40,23 @@ let app = new Vue ({
                 "News",
                 "Get in touch now",
             ],
+            copyright: [
+                {
+                    copy1: "© Copyright 2012-2020"
+                },
+                {
+                    copy1: "Avada Theme by",
+                    copy2: "ThemeFusion",
+                },
+                {
+                    copy1: "All Rights Reserved",
+                },
+                {
+                    copy1: "Powered by",
+                    copy2: "WordPress",
+                },
+                
+            ],
             icone: [
                 "fab fa-facebook-f",
                 "fab fa-instagram",

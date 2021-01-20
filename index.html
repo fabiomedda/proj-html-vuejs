@@ -363,12 +363,22 @@
             <!-- Footer -->
             <footer>
                 <img :src="footer.logo" alt="">
-                <div>
-                    <ul>
-                        <li v-for="link in footer.link">{{link}}</li>
+                <div class="link">
+                    <ul class="d_flex">
+                        <li class="list_style_none" v-for="link in footer.link"><a href="">{{link}}</a></li>
                     </ul>
                 </div>
-                <i v-for="i in footer.icone" :class="i"></i>
+
+                <div>
+                    <ul class="d_flex">
+                        <li class="list_style_none" v-for="copy in footer.copyright">{{copy.copy1}} <span v-if="copy.copy2">{{copy.copy2}}</span></li>
+                    </ul>
+                </div>
+
+                <a v-for="i in footer.icone" href="#">
+                    <i :class="i"></i>
+                </a>
+
             </footer>
             <!-- //Footer -->
 

@@ -597,10 +597,70 @@ nav a:hover{
 
 /* //Sezione 7 */
 
-
-
-
-
 /***********
 ////MAIN////
 ***********/
+
+
+/*************
+****FOOTER****
+*************/
+
+footer{
+    text-align: center;
+    padding: 60px;
+    background-color: #F7F8FA;
+}
+
+footer ul{
+    justify-content: center;
+    margin: 40px 0;
+}
+
+footer .link li a{
+    text-decoration: none;
+    color: #5d5c5d;
+    font-size: 12px;
+    margin: 0 15px;
+    font-weight: 600;
+}
+
+footer .link li a:hover{
+    text-decoration: underline;
+}
+
+footer .link li:first-of-type a{
+    color: #ffa837;
+}
+
+footer >div:last-of-type li{
+    color: #5d5c5d;
+    font-size: 12px;
+    padding: 0 15px;
+    font-weight: 600;
+}
+
+footer>div:last-of-type li:not(:last-of-type){
+    border-right: 1px solid #5d5c5d;
+}
+
+footer>div:last-of-type li span{
+    color: black;
+    font-weight: 900;
+}
+
+footer > a{
+    text-decoration: none;
+    color: #5d5c5d;
+    margin: 20px;
+    font-size: 20px;
+}
+
+footer>a:hover{
+    color: black;
+}
+
+
+/*************
+////FOOTER////
+*************/
