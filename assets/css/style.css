@@ -35,6 +35,15 @@ body{
 .text_center{
     text-align: center;
 }
+
+.color_purple_heart{
+    color: #5F7AFD;
+}
+
+.color_light_grey{
+    color: #6C6C74;
+}
+
 /* //class utility */
 
 /***********
@@ -348,9 +357,122 @@ nav a:hover{
     cursor: pointer;
 }
 
-
+#section_3>div>div:last-of-type>button:hover {
+    background-color: #ff9001;
+}
 
 /* //Sezione 3 */
+
+
+/* Sezione 4 */
+
+#section_4{
+    padding: 75px 0;
+    background-image: url("../img/background1.jpg");
+    background-position: center;
+}
+
+#section_4> div > div:first-of-type{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+
+#section_4> div > div:first-of-type h3 {
+    color: white;
+    font-size: 37px;
+    padding: 25px 0;
+}
+
+#section_4>div>div:first-of-type>p {
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+    margin-bottom: 75px;
+}
+
+#section_4>div>div.d_flex{
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#section_4>div>div.d_flex > .box{
+    width: 23.5%;
+    padding: 40px 0;
+    background-color: white;
+}
+
+#section_4>div>div.d_flex>.box>h4 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#section_4>div>div.d_flex>.box> div.d_flex{
+    justify-content: center;
+}
+
+#section_4>div>div.d_flex>.box>div.d_flex>span{
+    font-size: 40px;
+    line-height: 35px;
+    font-weight: 900;
+} 
+
+#section_4>div>div.d_flex>.box>div.d_flex>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+#section_4>div>div.d_flex>.box>p{
+    margin: 40px;
+}
+
+#section_4>div>div.d_flex>.box>div>button{
+    padding: 13px 22px;
+    font-weight: 700;
+    border-radius: 20px;
+    text-transform: uppercase;
+    background-color: white;
+    border: 2px solid black;
+    outline: none;
+    cursor: pointer;
+}
+
+#section_4>div>div.d_flex>.box>div>button:hover{
+    color: gray;
+    border-color: gray;
+}
+
+#section_4>div>div.d_flex>.box>div>button.btn_orange{
+    padding: 13px 22px;
+    color: white;
+    font-weight: 700;
+    border-radius: 20px;
+    text-transform: uppercase;
+    background-color: #ffa837;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#section_4>div>div.d_flex>.box>div>button.btn_orange:hover{
+    background-color: #ff9001;
+}
+
+/* //Sezione 4 */
+
+
+/* Sezione 5 */
+
+
+
+
+/* //Sezione 5 */
+
+
 
 
 /***********
