@@ -190,37 +190,111 @@ nav a:hover{
     padding-bottom: 80px;
 }
 
-#section_1>div>div:last-of-type{
+#section_1>div>div.d_flex{
     justify-content: space-between;
 }
 
-#section_1>div>div:last-of-type .box{
+#section_1>div>div.d_flex .box{
     width: 32%;
     padding: 40px 27px;
     background-color: white;
 } 
 
-#section_1>div>div:last-of-type .box i{
+#section_1>div>div.d_flex .box i{
     font-size: 32px;
     margin-top: 10px;
     margin-bottom: 25px;
     color: #ffa837;
 }
 
-#section_1>div>div:last-of-type .box h3 {
+#section_1>div>div.d_flex .box h3 {
     font-size: 30px;
     margin-bottom: 25px;
 }
 
-#section_1>div>div:last-of-type .box p {
+#section_1>div>div.d_flex .box p {
     font-size: 17px;
     line-height: 30px;
     margin-bottom: 5px;
     color: #5d5c5d;
 }
 
+#section_1 div.img{
+    height: 570px;
+    background-image: url("../img/agency-seo-desk-front-1200x570.jpg");
+}
 
 /* //Sezione 1 */
+
+
+/* Sezione 2 */
+
+#section_2{
+    background-image: url("../img/pattern_background.png");
+    height: 900px;
+    background-color: #051642;
+    padding: 80px 0;
+}
+
+#section_2 > h3{
+    color: white;
+    font-size: 37px;
+    padding: 25px 0;
+}
+
+#section_2>p {
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 100px;
+}
+
+#section_2 div.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#section_2 div.container .box{
+    width: 23%;
+    background-color: #071B50;
+    padding: 30px 20px;
+}
+
+#section_2 div.container .box > i{
+    color: #FFA837;
+    font-size: 32px;
+    padding: 20px;
+}
+
+#section_2 div.container .box>h4{
+    font-size: 25px;
+    padding: 15px 0;
+    color: white;
+}
+
+#section_2 div.container .box>p{
+    font-size: 18px;
+    color: white;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+#section_2 div.container .box>a{
+    text-decoration: none;
+    color: #FFA837;
+    font-size: 18px;
+}
+
+#section_2 div.container .box>a:hover{
+    color: #fd7200;
+}
+
+#section_2 div.container .box>a>i{
+    font-size: 12px;
+}
+
+/* //Sezione 2 */
+
 
 /***********
 ////MAIN////
