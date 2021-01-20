@@ -467,7 +467,77 @@ nav a:hover{
 
 /* Sezione 5 */
 
+#section_5{
+    padding: 75px;
+    background-color: #F7F8FA;
+}
 
+#section_5>div>div:first-of-type {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+#section_5>div>div:first-of-type h3 {
+    font-size: 37px;
+    padding: 25px 0;
+}
+
+#section_5>div>div:first-of-type>p {
+    font-size: 20px;
+    line-height: 30px;
+    color: #5d5c5d;
+    margin-bottom: 75px;
+}
+
+#section_5>div>div.d_flex{
+    justify-content: space-between;
+    margin-bottom: 75px;
+}
+
+#section_5>div>div.d_flex>.box{
+    width: 32%;
+}
+
+#section_5>div>div.d_flex>.box>img{
+    width: 100%;
+}
+
+#section_5>div>div.d_flex>.box>h4{
+    color: #ffa837;
+    font-size: 22px;
+    font-weight: 900;
+    padding-top: 12px;
+}
+
+#section_5>div>div.d_flex>.box>p:first-of-type{
+    font-size: 12px;
+    padding: 12px 0;
+    color: #5d5c5d;
+}
+
+#section_5>div>div.d_flex>.box>p:last-of-type{
+    color: #5d5c5d;
+    line-height: 25px;
+    font-weight: 500;
+}
+
+#section_5>div>div>button {
+    padding: 13px 22px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 700;
+    border-radius: 20px;
+    text-transform: uppercase;
+    background-color: #ffa837;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#section_5>div>div>button:hover {
+    background-color: #ff9001;
+}
 
 
 /* //Sezione 5 */
