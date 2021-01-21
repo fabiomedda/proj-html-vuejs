@@ -12,16 +12,30 @@ let app = new Vue ({
         navLeft: {
             logo: "assets/img/logo_seo_w_1x.png",
         },
-        navRight: {
-            linkHome: "Home",
-            linkWho: "Who We Are",
-            linkWhat: "What We Do",
-            linkWhere: "Where We Work",
-            linkCareers: "Careers",
-            linkApply: "APPLY",
-            linkNews: "News",
-            linkGet: "Get in touch now"
-        },
+        navRight: [
+            {
+                link: "Home",
+            },
+            {
+                link: "Who We Are",
+            },
+            {
+                link: "What We Do",
+            },
+            {
+                link: "Where We Work",
+            },
+            {
+                link: "Careers",
+                btn: "APPLY",
+            },
+            {
+                link: "News",
+            },
+            {
+                btn: "Get in touch now",
+            },
+        ],
         headerJumbotron: {
             h1: "SEM Campaigns Made Simple With Avada",
             p1: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
@@ -45,7 +59,6 @@ let app = new Vue ({
                 visible: false,
             }
         ],
-        indexImages: 0,
         footer:{
             logo: "assets/img/logo_seo_1x.png",
             link: [
@@ -93,20 +106,16 @@ let app = new Vue ({
             }
         },
         changeImg(index){
-            console.log(index);
             if (index === 0) {
-                this.sect6Img[0].visible = true;
                 this.sect6Img[1].visible = false;
+                this.sect6Img[0].visible = true;
             } else {
-                this.sect6Img[1].visible = true;
                 this.sect6Img[0].visible = false;
+                this.sect6Img[1].visible = true;
             }
         }
     },
     created: function () {
         setInterval(this.visible, 3000);
     },
-    mounted(){
-        
-    }
 });

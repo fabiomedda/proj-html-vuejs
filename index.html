@@ -31,15 +31,11 @@
                     </section>
 
                     <section>
+
                         <ul class="list_style_none d_flex align_items_center">
-                            <li><a href="#" class="active">{{navRight.linkHome}}</a></li>
-                            <li><a href="#">{{navRight.linkWho}}</a></li>
-                            <li><a href="#">{{navRight.linkWhat}}</a></li>
-                            <li><a href="#">{{navRight.linkWhere}}</a></li>
-                            <li><a href="#">{{navRight.linkCareers}}</a> <button class="btn_apply">{{navRight.linkApply}}</button></li>
-                            <li><a href="#">{{navRight.linkNews}}</a></li>
-                            <li><button>{{navRight.linkGet}}</button></li>
+                            <li v-for="link in navRight"><a v-if="link.link" href="#">{{link.link}}</a> <button v-if="link.btn" :class="link.btn == 'APPLY' ? 'btn_apply' : '' ">{{link.btn}}</button></li>
                         </ul>
+
                     </section>
 
                 </nav>
@@ -110,7 +106,7 @@
                 <section id="section_2" class="text_center">
 
                     <h3>See Our Top Notch Services</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem <br> accusantium doloremque laudantium.</p>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
 
                     <div class="container">
 
@@ -374,7 +370,7 @@
 
                     <div>
                         <h3>Start Your Free Consultation</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem <br> accusantium doloremque laudantium.</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
                         <button>contact us now</button>
                     </div>
 
