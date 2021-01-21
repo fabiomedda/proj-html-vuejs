@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap" rel="stylesheet">
         <!-- development version, includes helpful console warnings -->
         <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -340,6 +340,31 @@
 
                 <!-- Sezione 6 -->
                 <section id="section_6">
+
+                    <div class="container">
+
+                        <h3 class="text_center">What Our Clients Say</h3>
+                        <div class="text_center" v-for="testimonial in sect6Img">
+                            <div class="box" v-if="testimonial.visible">
+                                <div>
+                                    <img :src="testimonial.testimonial" alt="">
+                                </div>
+                                <p>{{testimonial.frase}}</p>
+                                <p><span>{{testimonial.nome}}</span>, {{testimonial.lavoro}}</p>
+                            </div>
+                        </div>
+                        <div class="pallini d_flex">
+                            <div :class="testimonial.visible ? 'active_img' : ''" v-for="(testimonial, index) in sect6Img" @click="changeImg(index)"></div>
+                        </div>
+
+                        <div class="logs">
+                            <img src="assets/img/clients_partner_5-200x202.png" alt="">
+                            <img src="assets/img/clients_partner_6-200x202.png" alt="">
+                            <img src="assets/img/clients_partner_1-200x202.png" alt="">
+                            <img src="assets/img/clients_partner_2-200x202.png" alt="">
+                        </div>
+
+                    </div>
 
                 </section>
                 <!-- //Sezione 6 -->

@@ -544,6 +544,67 @@ nav a:hover{
 
 /* Sezione 6 */
 
+#section_6{
+    padding: 100px 0;
+}
+
+#section_6 > div > h3{
+    font-size: 37px;
+    padding: 25px 0;
+}
+
+#section_6 .box img{
+    border-radius: 50%;
+}
+
+#section_6 .box p:first-of-type{
+    font-size: 20px;
+    line-height: 30px;
+    color: #5d5c5d;
+    font-style: italic;
+    width: 60%;
+    margin: auto;
+    padding: 30px 0;
+}
+
+#section_6 .box p:last-of-type{
+    font-size: 20px;
+}
+
+#section_6 .box p:last-of-type span{
+    font-weight: 700;
+}
+
+#section_6 .logs{
+    padding-top: 50px;
+    margin-top: 50px;
+    border-top: 1px solid lightgray;
+    display: flex;
+    justify-content: space-around;
+}
+
+#section_6 .logs img{
+    width: 150px;
+}
+
+
+#section_6>div .pallini{
+    justify-content: center;
+    padding: 30px 0;
+}
+
+#section_6>div .pallini > div{
+    width: 15px;
+    height: 15px;
+    margin: 0 6px;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.active_img{
+    background-color: black;
+}
 
 
 /* //Sezione 6 */
@@ -659,7 +720,6 @@ footer > a{
 footer>a:hover{
     color: black;
 }
-
 
 /*************
 ////FOOTER////

@@ -29,6 +29,23 @@ let app = new Vue ({
             linkBuy: "Buy avada now",
             linkContact: "Contact us",
         },
+        sect6Img: [
+            {
+                testimonial: "assets/img/testimonials-1.jpg",
+                frase: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor ipsa nihil illum. Phasellus eu ornare erat.",
+                nome: "Alice Jovovich",
+                lavoro: "UMBRELLA CORPORATION",
+                visible: true,
+            },
+            {
+                testimonial: "assets/img/testimonials-2.jpg",
+                frase: "Ability proceeds from a fusion of skills, knowledge, understanding and imagination, consolidated by experience.",
+                nome: "Luis Desalvo",
+                lavoro: "CREO TECH",
+                visible: false,
+            }
+        ],
+        indexImages: 0,
         footer:{
             logo: "assets/img/logo_seo_1x.png",
             link: [
@@ -66,9 +83,30 @@ let app = new Vue ({
         }
     },
     methods:{
-
+        visible(){
+            if (this.sect6Img[0].visible) {
+                this.sect6Img[0].visible = false;
+                this.sect6Img[1].visible = true;
+            } else {
+                this.sect6Img[1].visible = false;
+                this.sect6Img[0].visible = true;
+            }
+        },
+        changeImg(index){
+            console.log(index);
+            if (index === 0) {
+                this.sect6Img[0].visible = true;
+                this.sect6Img[1].visible = false;
+            } else {
+                this.sect6Img[1].visible = true;
+                this.sect6Img[0].visible = false;
+            }
+        }
     },
-    mounted:{
-
+    created: function () {
+        setInterval(this.visible, 3000);
+    },
+    mounted(){
+        
     }
 });
